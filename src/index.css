@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.node {
+  transition: background-color 0.2s ease;
+}
+
+.node-visited {
+  background-color: #ffd700; /* Yellow */
+}
+
+.node-shortest-path {
+  background-color: #32cd32; /* LimeGreen */
+}
