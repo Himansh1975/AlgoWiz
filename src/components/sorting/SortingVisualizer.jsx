@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import ArrayBar from '../common/ArrayBar';
-import Controls from '../common/Controls';
+import ArrayBar from './ArrayBar';
+import Controls from './Controls';
 import bubbleSort from '../../algorithms/sorting/bubbleSort';
 import quickSort from '../../algorithms/sorting/quickSort';
 
