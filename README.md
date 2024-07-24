@@ -13,10 +13,10 @@ AlgoViz is an interactive visualization tool for sorting algorithms and pathfind
 ## Screenshots
 
 ### Sorting Visualization
-(sorting.png)
+![alt text](sorting.png)
 
 ### Pathfinding Visualization
-(pathfinding.png)
+![Pathfinding Visualization](pathfinding.png)
 
 ## Installation
 
