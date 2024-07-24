@@ -63,12 +63,12 @@ const Controls = ({ isRunning, algorithm, setAlgorithm, size, handleSizeChange, 
           />
         </div>
         <div className="flex flex-col items-center">
-          <label className="font-semibold text-sm mb-2">Speed: {speed}ms</label>
+          <label className="font-semibold text-sm mb-2">Delay: {speed}ms</label>
           <input
             type="range"
             value={speed}
             onChange={handleSpeedChange}
-            min="1"
+            min="10"
             max="200"
             className="w-40 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all duration-300"
             disabled={isRunning}
