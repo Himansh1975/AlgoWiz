@@ -1,8 +1,28 @@
-# React + Vite
+# AlgoViz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AlgoViz is an interactive visualization tool for sorting algorithms and pathfinding algorithms. It is built using React with Vite bundler and styled with Tailwind CSS. The project is frontend-only and provides a user-friendly interface to visualize various algorithms in action.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Visualize various sorting algorithms including Bubble Sort and Quick Sort.
+- Visualize pathfinding algorithms on a grid.
+- Interactive controls to start, stop, and reset the visualizations.
+- Adjustable size and speed for sorting and pathfinding visualizations.
+- Modern, responsive UI built with Tailwind CSS.
+
+## Screenshots
+
+### Sorting Visualization
+(sorting.png)
+
+### Pathfinding Visualization
+(pathfinding.png)
+
+## Installation
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
