@@ -2,8 +2,8 @@ import React from 'react';
 
 const Controls = ({ isRunning, algorithm, setAlgorithm, size, handleSizeChange, speed, handleSpeedChange, start, reset, stop }) => {
   return (
-    <div className="flex flex-wrap justify-between items-center mb-8 bg-gray-900 p-6 rounded-xl shadow-2xl">
-      <div className="flex space-x-4 mb-4 sm:mb-0">
+    <div className="flex flex-col sm:flex-row flex-wrap justify-between items-center mb-8 bg-gray-900 p-6 rounded-xl shadow-2xl space-y-4 sm:space-y-0">
+      <div className="flex justify-center sm:justify-start space-x-4 mb-4 sm:mb-0">
         <button
           className={`bg-green-600 hover:bg-green-500 active:bg-green-700 px-6 py-3 rounded-lg font-bold text-sm transition-all duration-300 ${isRunning ? 'cursor-not-allowed opacity-50' : ''}`}
           onClick={start}
@@ -29,7 +29,7 @@ const Controls = ({ isRunning, algorithm, setAlgorithm, size, handleSizeChange, 
           Stop
         </button>
       </div>
-      <div className="flex items-center space-x-4 mb-4 sm:mb-0">
+      <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
         <label className="font-semibold text-sm">Algorithm:</label>
         <div className="relative inline-block w-40">
           <select
@@ -48,7 +48,7 @@ const Controls = ({ isRunning, algorithm, setAlgorithm, size, handleSizeChange, 
           </div>
         </div>
       </div>
-      <div className="flex space-x-6 items-center">
+      <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
         <div className="flex flex-col items-center">
           <label className="font-semibold text-sm mb-2">Size: {size}</label>
           <input

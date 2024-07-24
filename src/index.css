@@ -2,20 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.text-gradient {
+  background: linear-gradient(90deg, #6366F1, #A855F7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-.node {
-  transition: background-color 0.2s ease;
-}
-
-.node-visited {
-  background-color: #ffd700; /* Yellow */
-}
-
-.node-shortest-path {
-  background-color: #32cd32; /* LimeGreen */
+.text-gradient-hover:hover {
+  background: linear-gradient(90deg, #818CF8, #D8B4FE);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
