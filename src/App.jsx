@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import PathfindingVisualizer from './PathfindingVisualizer';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import Sorting from './pages/Sorting';
+import Pathfinding from './pages/Pathfinding';
 
 const App = () => {
   return (
@@ -20,9 +20,9 @@ const App = () => {
         </header>
         <main className="mx-auto">
           <Routes>
-            <Route path="/" element={<Home/>} />
+            <Route path="/" element={<Home />} />
             <Route path="/sorting" element={<Sorting />} />
-            <Route path="/pathfinding" element={<PathfindingVisualizer />} />
+            <Route path="/pathfinding" element={<Pathfinding />} />
           </Routes>
         </main>
       </div>
