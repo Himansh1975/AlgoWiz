@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from 'react';
+import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import ArrayBar from './ArrayBar';
 import Controls from './Controls';
 import bubbleSort from '../../algorithms/sorting/bubbleSort';
@@ -70,8 +70,8 @@ const SortingVisualizer = () => {
     setSortSpeed(Number(e.target.value));
   };
 
-  const maxValue = Math.max(...array);
-  const barWidth = `calc((100% / ${array.length}) - 2px)`;
+  const maxValue = useMemo(() => Math.max(...array), [array]);
+  const barWidth = useMemo(() => `calc((100% / ${array.length}) - 2px)`, [array.length]);
 
   return (
     <div className="h-screen flex flex-col bg-gradient-to-r from-purple-500 to-indigo-600 text-white p-6">

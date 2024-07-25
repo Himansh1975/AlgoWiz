@@ -10,7 +10,7 @@ const Grid = ({ grid, handleNodeClick, cellSize, gridRef }) => {
   return (
     <div className="flex-grow flex items-center justify-center bg-gray-900 rounded-xl shadow-inner p-6" ref={gridRef}>
       <div
-        className="grid gap-[1px]"
+        className="grid"
         style={{
           gridTemplateColumns: `repeat(${grid[0].length}, ${cellSize}px)`,
           gridTemplateRows: `repeat(${grid.length}, ${cellSize}px)`,

@@ -12,8 +12,9 @@ const Node = ({ node, onClick }) => {
 
   return (
     <div
-      className={`${getNodeClass()} transition-all duration-200 ease-in-out hover:bg-opacity-80 cursor-pointer`}
+      className={`${getNodeClass()} transition-all duration-200 ease-in-out hover:bg-opacity-80 cursor-pointer border border-gray-400`}
       onClick={onClick}
+      style={{ width: '100%', height: '100%' }}
       title={
         node.isStart
           ? 'Start Node'

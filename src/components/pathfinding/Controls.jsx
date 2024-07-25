@@ -58,7 +58,7 @@ const Controls = ({
           value={rows}
           onChange={(e) => setRows(Number(e.target.value))}
           min="5"
-          max="50"
+          max="40"
           className="w-24"
           disabled={isVisualizing}
         />
@@ -70,7 +70,7 @@ const Controls = ({
           value={cols}
           onChange={(e) => setCols(Number(e.target.value))}
           min="5"
-          max="50"
+          max="40"
           className="w-24"
           disabled={isVisualizing}
         />

@@ -7,18 +7,19 @@ import { dijkstra, aStar } from '../../algorithms/pathfinding';
 const PathfindingVisualizer = () => {
   const [grid, setGrid] = useState([]);
   const [isVisualizing, setIsVisualizing] = useState(false);
-  const [rows, setRows] = useState(20);
-  const [cols, setCols] = useState(30);
+  const [rows, setRows] = useState(5);
+  const [cols, setCols] = useState(5);
   const [visualizationSpeed, setVisualizationSpeed] = useState(50);
   const [startNode, setStartNode] = useState(null);
   const [endNode, setEndNode] = useState(null);
   const [algorithm, setAlgorithm] = useState('dijkstra');
   const stopVisualizationRef = useRef(false);
   const gridRef = useRef(null);
-  const [cellSize, setCellSize] = useState(20);
+  const [cellSize, setCellSize] = useState(60);
 
   useEffect(() => {
     resetGrid();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [rows, cols]);
 
   useEffect(() => {
@@ -28,7 +29,7 @@ const PathfindingVisualizer = () => {
         const gridHeight = gridRef.current.offsetHeight;
         const cellWidth = Math.floor(gridWidth / cols) - 1;
         const cellHeight = Math.floor(gridHeight / rows) - 1;
-        const newCellSize = Math.min(cellWidth, cellHeight, 30);
+        const newCellSize = Math.min(cellWidth, cellHeight, 80);
         setCellSize(newCellSize);
       }
     };
