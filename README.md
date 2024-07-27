@@ -17,12 +17,3 @@ AlgoViz is an interactive visualization tool for sorting algorithms and pathfind
 
 ### Pathfinding Visualization
 ![Pathfinding Visualization](public/pathfinding.png)
-
-## Installation
-
-To get a local copy up and running, follow these simple steps.
-
-### Prerequisites
-
-- Node.js (v14 or higher)
-- npm or yarn
