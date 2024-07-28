@@ -169,7 +169,7 @@ const PathfindingVisualizer = () => {
   };
 
   return (
-    <div className="flex flex-col bg-gradient-to-r from-purple-500 to-indigo-600 text-white p-6">
+    <div className="flex flex-col bg-gradient-to-r from-purple-500 to-indigo-600 text-white p-5">
       <Controls
         isVisualizing={isVisualizing}
         visualizeAlgorithm={visualizeAlgorithm}

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import ArrayBar from './ArrayBar';
 import Controls from './Controls';
 import bubbleSort from '../../algorithms/sorting/bubbleSort';
@@ -70,11 +70,11 @@ const SortingVisualizer = () => {
     setSortSpeed(Number(e.target.value));
   };
 
-  const maxValue = useMemo(() => Math.max(...array), [array]);
-  const barWidth = useMemo(() => `calc((100% / ${array.length}) - 2px)`, [array.length]);
+  const maxValue = Math.max(...array);
+  const barWidth = `calc((100% / ${array.length}) - 2px)`;
 
   return (
-    <div className="h-screen flex flex-col bg-gradient-to-r from-purple-500 to-indigo-600 text-white p-6">
+    <div className="h-screen flex flex-col bg-gradient-to-r from-purple-500 to-indigo-600 text-white p-5">
       <Controls
         isRunning={isSorting}
         algorithm={algorithm}
@@ -87,7 +87,7 @@ const SortingVisualizer = () => {
         reset={resetArray}
         stop={stopSorting}
       />
-      <div className="flex-grow flex items-end justify-center h-[34rem] bg-gray-900 rounded-xl shadow-inner p-6">
+      <div className="flex-grow flex items-end justify-center h-[34rem] bg-gray-900 rounded-xl shadow-inner p-5">
         {array.map((value, index) => (
           <ArrayBar
             key={index}

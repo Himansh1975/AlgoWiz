@@ -11,11 +11,11 @@ const ArrayBar = ({ value, maxValue, width, isActive, isPivot, isSorted }) => {
 
   return (
     <div
-      className={`transition-all duration-300 ease-in-out ${barColor} shadow-md rounded-sm`}
+      className={`transition-all duration-300 ease-in-out ${barColor} shadow-lg`}
       style={{
         height: `${(value / maxValue) * 100}%`,
         width,
-        margin: '0 2px',
+        margin: '0 1px',
       }}
     ></div>
   );

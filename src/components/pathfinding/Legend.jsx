@@ -8,8 +8,8 @@ const LegendItem = ({ color, label }) => (
 );
 
 const Legend = () => (
-  <div className="flex flex-wrap justify-center items-center p-4 bg-gray-800 bg-opacity-50 rounded-lg mt-6">
-    <div className="flex flex-wrap justify-center space-x-4 space-y-4 sm:space-y-0 sm:space-x-6">
+  <div className="p-4 bg-gray-900 rounded-lg mt-6">
+    <div className="flex flex-wrap justify-center gap-4">
       <LegendItem color="bg-green-500" label="Start Node" />
       <LegendItem color="bg-red-500" label="End Node" />
       <LegendItem color="bg-gray-600" label="Wall" />
