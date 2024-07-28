@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaChartBar, FaRoute, FaPlay, FaStop, FaRedo, FaRandom } from 'react-icons/fa';
+import { FaChartBar, FaRoute, FaPlay, FaStop, FaRedo, FaChessQueen } from 'react-icons/fa';
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
       </div>
       
       <div className="bg-gray-800 bg-opacity-90 p-8 rounded-2xl shadow-2xl w-full max-w-4xl backdrop-filter backdrop-blur-lg">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
           <VisualizerLink
             to="/pathfinding"
             title="Pathfinding Visualizer"
@@ -28,6 +28,12 @@ const Home = () => {
             icon={<FaChartBar className="text-4xl mb-2" />}
             bgColor="from-purple-500 to-pink-400"
           />
+          <VisualizerLink
+            to="/backtracking"
+            title="Backtracking Visualizer"
+            icon={<FaChessQueen className="text-4xl mb-2" />}
+            bgColor="from-green-500 to-teal-400"
+          />
         </div>
         
         <div className="text-center space-y-6">
@@ -36,7 +42,6 @@ const Home = () => {
             <ControlButton icon={<FaPlay />} label="Start" />
             <ControlButton icon={<FaStop />} label="Stop" />
             <ControlButton icon={<FaRedo />} label="Reset" />
-            <ControlButton icon={<FaRandom />} label="Shuffle" />
           </div>
           <p className="mt-6 text-sm text-gray-300">
             Experiment with different algorithms to observe their behavior and compare their efficiency.
